@@ -1,4 +1,4 @@
-import { gql } from "urql";
+import { gql } from "@apollo/client";
 
 export const COMMENTS_QUERY = gql`
   query CommentsQuery {

@@ -1,4 +1,4 @@
-import { gql } from "urql";
+import { gql } from "@apollo/client";
 
 export const USER_BY_ID_QUERY = gql`
   query GetUserByID($userId: ID!) {
