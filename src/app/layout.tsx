@@ -14,9 +14,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="flex flex-col mx-auto max-w-2xl min-h-screen">
+      <body className="flex flex-col mx-auto max-w-2xl min-h-screen text-gray-900">
         <NavBar />
-        <div className="flex-grow bg-gray-50 p-5">{children}</div>
+        <div className="flex-grow bg-gray-50 p-3 sm:p-5">{children}</div>
       </body>
     </html>
   );

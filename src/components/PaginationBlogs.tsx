@@ -2,9 +2,9 @@
 
 import useCustomeRouter from "@/hooks/useCustomRouter";
 
-const PaginationNumber = (props: { totalPages: number }) => {
+const PaginationBlogs = (props: { totalPages: number }) => {
   const pageNumbers = [];
-  const { pushQuery, query }: any = useCustomeRouter();
+  const { pushQuery, query } = useCustomeRouter();
 
   function isNumber(inputString: string) {
     return /^\d+$/.test(inputString);
@@ -81,4 +81,4 @@ const PaginationNumber = (props: { totalPages: number }) => {
   );
 };
 
-export default PaginationNumber;
+export default PaginationBlogs;

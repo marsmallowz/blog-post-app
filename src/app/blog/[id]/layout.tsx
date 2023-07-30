@@ -12,9 +12,5 @@ export default function BlogLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return (
-    <ApolloProvider client={client}>
-      <div className="flex-grow bg-gray-50 p-5">{children}</div>
-    </ApolloProvider>
-  );
+  return <ApolloProvider client={client}>{children}</ApolloProvider>;
 }
