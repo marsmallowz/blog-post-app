@@ -45,7 +45,7 @@ export default async function Page({
   return (
     <div className="flex flex-col">
       <div className="text-2xl font-bold pb-2">List User</div>
-      <div className="flex flex-col sm:flex-row gap-2 justify-between">
+      <div className="flex flex-col-reverse sm:flex-row gap-2 justify-between">
         <SearchForm />
         <UserCreateBtn />
       </div>
