@@ -19,12 +19,3 @@ export const POST_QUERY = gql`
     }
   }
 `;
-
-// export const LIST_POST_QUERY = gql`
-//   query GetPosts($postId: ID!) {
-//     post(id: $postId) {
-//       id
-//       title
-//       body
-//   }
-// `;

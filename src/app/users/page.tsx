@@ -17,7 +17,6 @@ async function getUsers(page: number, search: string) {
     `https://gorest.co.in/public/v2/users?name=${search}&page=${page}&per_page=10&access-token=` +
       process.env.NEXT_PUBLIC_DATA_TOKEN,
     {
-      // next: { revalidate: 10 },
       cache: "no-store",
     }
   );

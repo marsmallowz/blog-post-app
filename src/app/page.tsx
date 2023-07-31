@@ -6,7 +6,6 @@ async function getBlogs(page: number) {
   const res = await fetch(
     `https://gorest.co.in/public/v2/posts?page=${page}&per_page=10`,
     {
-      // next: { revalidate: 10 },
       cache: "no-store",
     }
   );
